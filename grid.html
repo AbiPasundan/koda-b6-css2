@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body {
+        color: white;
+        background-color: #010101;
+      }
       .parent {
         display: grid;
-        max-width: 500px;
+        max-width: 200px;
         text-align: center;
-        margin: auto;
+        margin-inline: auto;
+        margin-top: 25vh;
         /* grid-template-columns: 1fr 20px; */
         grid-template-areas:
           "result result result result"
@@ -22,89 +27,171 @@
 
       .result {
         grid-area: result;
-        background-color: blue;
-        float: right;
+        /* background-color: blue; */
+        text-align: right;
+        /* padding-right: 30px; */
+        margin: 4px;
+        font-size: 48px;
       }
       /* row 1 */
       .clear {
         grid-area: clear;
-        background-color: blueviolet;
+        background-color: #d9d9d9;
+        color: #333333;
+        border-radius: 50%;
+        padding-inline: 13px;
+        padding-block: 13px;
+        margin: 4px;
       }
       .alter {
         grid-area: alter;
-        background-color: skyblue;
+        background-color: #a6a6a6;
+        color: #333333;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       .modulus {
         grid-area: modulus;
-        background-color: aqua;
+        background-color: #a6a6a6;
+        color: #333333;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       .devide {
         grid-area: devide;
-        background-color: aquamarine;
+        background-color: #f1a23b;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       /* row2 */
       .seven {
         grid-area: seven;
-        background-color: chocolate;
+        background-color: #333333;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       .eight {
         grid-area: eight;
-        background-color: burlywood;
+        background-color: #333333;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       .nine {
         grid-area: nine;
-        background-color: chartreuse;
+        background-color: #333333;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       .multiply {
         grid-area: multiply;
-        background-color: tomato;
+        background-color: #f1a23b;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       /* row 3 */
       .four {
         grid-area: four;
-        background-color: deepskyblue;
+        background-color: #333333;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       .five {
         grid-area: five;
-        background-color: darkblue;
+        background-color: #333333;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       .six {
         grid-area: six;
-        background-color: darkturquoise;
+        background-color: #333333;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       .min {
         grid-area: min;
-        background-color: cornflowerblue;
+        background-color: #f1a23b;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       /* row 4 */
       .one {
-        grid-area:one;
-        background-color: mediumaquamarine;
+        grid-area: one;
+        background-color: #333333;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       .two {
-        grid-area:two;
-        background-color: mediumseagreen;
+        grid-area: two;
+        background-color: #333333;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       .three {
         grid-area: three;
-        background-color: mediumturquoise;
+        background-color: #333333;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       .plus {
-        grid-area:plus;
-        background-color: mediumseagreen;
+        grid-area: plus;
+        background-color: #f1a23b;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       /* row 5 */
       .zero {
         grid-area: zero;
-        background-color: teal;
+        background-color: #333333;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 20px;
+        margin: 4px;
       }
       .dote {
         grid-area: dot;
-        background-color: steelblue;
+        background-color: #333333;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
       .same {
         grid-area: same;
-        background-color: royalblue;
+        background-color: #f1a23b;
+        padding-inline: 13px;
+        padding-block: 13px;
+        border-radius: 50%;
+        margin: 4px;
       }
     </style>
   </head>
@@ -112,29 +199,29 @@
     <div class="parent">
       <div class="result">564</div>
 
-      <div class="clear">clear</div>
-      <div class="alter">alter</div>
-      <div class="modulus">modulus</div>
-      <div class="devide">devide</div>
+      <div class="clear">C</div>
+      <div class="alter">+/-</div>
+      <div class="modulus">%</div>
+      <div class="devide">./.</div>
 
-      <div class="seven">seven</div>
-      <div class="eight">eight</div>
-      <div class="nine">nine</div>
-      <div class="multiply">multiply</div>
+      <div class="seven">7</div>
+      <div class="eight">8</div>
+      <div class="nine">9</div>
+      <div class="multiply">x</div>
 
-      <div class="four">four</div>
-      <div class="five">five</div>
-      <div class="six">six</div>
-      <div class="min">min</div>
+      <div class="four">4</div>
+      <div class="five">5</div>
+      <div class="six">6</div>
+      <div class="min">-</div>
 
-      <div class="one">one</div>
-      <div class="two">two</div>
-      <div class="three">three</div>
-      <div class="plus">plus</div>
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="plus">+</div>
 
-      <div class="zero">zero</div>
-      <div class="dote">dot</div>
-      <div class="same">same</div>
+      <div class="zero">0</div>
+      <div class="dote">.</div>
+      <div class="same">=</div>
     </div>
   </body>
 </html>
