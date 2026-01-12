@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        display: grid;
+        max-width: 500px;
+        text-align: center;
+        margin: auto;
+        /* grid-template-columns: 1fr 20px; */
+        grid-template-areas:
+          "result result result result"
+          "clear alter modulus devide"
+          "seven eight nine multiply"
+          "four five six min"
+          "one two three plus"
+          "zero zero dot same";
+      }
+
+      .result {
+        grid-area: result;
+        background-color: blue;
+        float: right;
+      }
+      /* row 1 */
+      .clear {
+        grid-area: clear;
+        background-color: blueviolet;
+      }
+      .alter {
+        grid-area: alter;
+        background-color: skyblue;
+      }
+      .modulus {
+        grid-area: modulus;
+        background-color: aqua;
+      }
+      .devide {
+        grid-area: devide;
+        background-color: aquamarine;
+      }
+      /* row2 */
+      .seven {
+        grid-area: seven;
+        background-color: chocolate;
+      }
+      .eight {
+        grid-area: eight;
+        background-color: burlywood;
+      }
+      .nine {
+        grid-area: nine;
+        background-color: chartreuse;
+      }
+      .multiply {
+        grid-area: multiply;
+        background-color: tomato;
+      }
+      /* row 3 */
+      .four {
+        grid-area: four;
+        background-color: deepskyblue;
+      }
+      .five {
+        grid-area: five;
+        background-color: darkblue;
+      }
+      .six {
+        grid-area: six;
+        background-color: darkturquoise;
+      }
+      .min {
+        grid-area: min;
+        background-color: cornflowerblue;
+      }
+      /* row 4 */
+      .one {
+        grid-area:one;
+        background-color: mediumaquamarine;
+      }
+      .two {
+        grid-area:two;
+        background-color: mediumseagreen;
+      }
+      .three {
+        grid-area: three;
+        background-color: mediumturquoise;
+      }
+      .plus {
+        grid-area:plus;
+        background-color: mediumseagreen;
+      }
+      /* row 5 */
+      .zero {
+        grid-area: zero;
+        background-color: teal;
+      }
+      .dote {
+        grid-area: dot;
+        background-color: steelblue;
+      }
+      .same {
+        grid-area: same;
+        background-color: royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="result">564</div>
+
+      <div class="clear">clear</div>
+      <div class="alter">alter</div>
+      <div class="modulus">modulus</div>
+      <div class="devide">devide</div>
+
+      <div class="seven">seven</div>
+      <div class="eight">eight</div>
+      <div class="nine">nine</div>
+      <div class="multiply">multiply</div>
+
+      <div class="four">four</div>
+      <div class="five">five</div>
+      <div class="six">six</div>
+      <div class="min">min</div>
+
+      <div class="one">one</div>
+      <div class="two">two</div>
+      <div class="three">three</div>
+      <div class="plus">plus</div>
+
+      <div class="zero">zero</div>
+      <div class="dote">dot</div>
+      <div class="same">same</div>
+    </div>
+  </body>
+</html>
