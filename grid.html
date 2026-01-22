@@ -3,225 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        color: white;
-        background-color: #010101;
-      }
-      .parent {
-        display: grid;
-        max-width: 200px;
-        text-align: center;
-        margin-inline: auto;
-        margin-top: 25vh;
-        /* grid-template-columns: 1fr 20px; */
-        grid-template-areas:
-          "result result result result"
-          "clear alter modulus devide"
-          "seven eight nine multiply"
-          "four five six min"
-          "one two three plus"
-          "zero zero dot same";
-      }
-
-      .result {
-        grid-area: result;
-        /* background-color: blue; */
-        text-align: right;
-        /* padding-right: 30px; */
-        margin: 4px;
-        font-size: 48px;
-      }
-      /* row 1 */
-      .clear {
-        grid-area: clear;
-        background-color: #d9d9d9;
-        color: #333333;
-        border-radius: 50%;
-        padding-inline: 13px;
-        padding-block: 13px;
-        margin: 4px;
-      }
-      .alter {
-        grid-area: alter;
-        background-color: #a6a6a6;
-        color: #333333;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      .modulus {
-        grid-area: modulus;
-        background-color: #a6a6a6;
-        color: #333333;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      .devide {
-        grid-area: devide;
-        background-color: #f1a23b;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      /* row2 */
-      .seven {
-        grid-area: seven;
-        background-color: #333333;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      .eight {
-        grid-area: eight;
-        background-color: #333333;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      .nine {
-        grid-area: nine;
-        background-color: #333333;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      .multiply {
-        grid-area: multiply;
-        background-color: #f1a23b;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      /* row 3 */
-      .four {
-        grid-area: four;
-        background-color: #333333;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      .five {
-        grid-area: five;
-        background-color: #333333;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      .six {
-        grid-area: six;
-        background-color: #333333;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      .min {
-        grid-area: min;
-        background-color: #f1a23b;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      /* row 4 */
-      .one {
-        grid-area: one;
-        background-color: #333333;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      .two {
-        grid-area: two;
-        background-color: #333333;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      .three {
-        grid-area: three;
-        background-color: #333333;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      .plus {
-        grid-area: plus;
-        background-color: #f1a23b;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      /* row 5 */
-      .zero {
-        grid-area: zero;
-        background-color: #333333;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 20px;
-        margin: 4px;
-      }
-      .dote {
-        grid-area: dot;
-        background-color: #333333;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-      .same {
-        grid-area: same;
-        background-color: #f1a23b;
-        padding-inline: 13px;
-        padding-block: 13px;
-        border-radius: 50%;
-        margin: 4px;
-      }
-    </style>
+    <title>Docum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="parent">
-      <div class="result">564</div>
+  <body class="bg-[#010101] text-white min-h-screen grid place-items-center font-sans">
+    
+    <div class="grid grid-cols-4 gap-3 w-72 p-4">
+      
+      <div class="col-span-4 text-right text-6xl font-light mb-4 pr-3 tracking-wide">
+        564
+      </div>
 
-      <div class="clear">C</div>
-      <div class="alter">+/-</div>
-      <div class="modulus">%</div>
-      <div class="devide">./.</div>
+      <button class="h-16 w-16 rounded-full bg-[#d9d9d9] text-[#333333] text-2xl font-medium grid place-items-center active:opacity-75">C</button>
+      <button class="h-16 w-16 rounded-full bg-[#a6a6a6] text-[#333333] text-2xl font-medium grid place-items-center active:opacity-75">+/-</button>
+      <button class="h-16 w-16 rounded-full bg-[#a6a6a6] text-[#333333] text-2xl font-medium grid place-items-center active:opacity-75">%</button>
+      <button class="h-16 w-16 rounded-full bg-[#f1a23b] text-white text-3xl font-medium grid place-items-center pb-1 active:opacity-75">÷</button>
 
-      <div class="seven">7</div>
-      <div class="eight">8</div>
-      <div class="nine">9</div>
-      <div class="multiply">x</div>
+      <button class="h-16 w-16 rounded-full bg-[#333333] text-white text-2xl font-medium grid place-items-center active:opacity-75">7</button>
+      <button class="h-16 w-16 rounded-full bg-[#333333] text-white text-2xl font-medium grid place-items-center active:opacity-75">8</button>
+      <button class="h-16 w-16 rounded-full bg-[#333333] text-white text-2xl font-medium grid place-items-center active:opacity-75">9</button>
+      <button class="h-16 w-16 rounded-full bg-[#f1a23b] text-white text-2xl font-medium grid place-items-center pb-1 active:opacity-75">x</button>
 
-      <div class="four">4</div>
-      <div class="five">5</div>
-      <div class="six">6</div>
-      <div class="min">-</div>
+      <button class="h-16 w-16 rounded-full bg-[#333333] text-white text-2xl font-medium grid place-items-center active:opacity-75">4</button>
+      <button class="h-16 w-16 rounded-full bg-[#333333] text-white text-2xl font-medium grid place-items-center active:opacity-75">5</button>
+      <button class="h-16 w-16 rounded-full bg-[#333333] text-white text-2xl font-medium grid place-items-center active:opacity-75">6</button>
+      <button class="h-16 w-16 rounded-full bg-[#f1a23b] text-white text-3xl font-medium grid place-items-center pb-1 active:opacity-75">-</button>
 
-      <div class="one">1</div>
-      <div class="two">2</div>
-      <div class="three">3</div>
-      <div class="plus">+</div>
+      <button class="h-16 w-16 rounded-full bg-[#333333] text-white text-2xl font-medium grid place-items-center active:opacity-75">1</button>
+      <button class="h-16 w-16 rounded-full bg-[#333333] text-white text-2xl font-medium grid place-items-center active:opacity-75">2</button>
+      <button class="h-16 w-16 rounded-full bg-[#333333] text-white text-2xl font-medium grid place-items-center active:opacity-75">3</button>
+      <button class="h-16 w-16 rounded-full bg-[#f1a23b] text-white text-3xl font-medium grid place-items-center pb-1 active:opacity-75">+</button>
 
-      <div class="zero">0</div>
-      <div class="dote">.</div>
-      <div class="same">=</div>
+      <button class="col-span-2 h-16 w-full rounded-full bg-[#333333] text-white text-2xl font-medium grid content-center text-left pl-7 active:opacity-75">0</button>
+      
+      <button class="h-16 w-16 rounded-full bg-[#333333] text-white text-2xl font-medium grid place-items-center active:opacity-75">.</button>
+      <button class="h-16 w-16 rounded-full bg-[#f1a23b] text-white text-3xl font-medium grid place-items-center pb-1 active:opacity-75">=</button>
+
     </div>
   </body>
 </html>
