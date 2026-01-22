@@ -7,7 +7,7 @@ This project is for minitask at 12/01/2026 creating ui for calculator using only
 
 ## Screenshot
 
-["calculator ui"](demo.png)
+![calculator ui](demo.png)
 
 ## How to use?
 
